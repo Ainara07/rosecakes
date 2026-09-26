@@ -8,17 +8,12 @@ html {
 
 body {
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-<<<<<<< HEAD
-=======
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
     color: #48361d;
     line-height: 1.6;
     background: #ffefec;
 }
-<<<<<<< HEAD
-=======
 
 img {
     max-width: 100%;
@@ -27,79 +22,24 @@ img {
 .container {
     width: min(1120px, 90%);
     margin: 0 auto;
+    padding: 30px;
 }
 
 section {
     padding: 50px 0;
 }
 
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
+/* HEADINGS */
+
 h1,
 h2,
 h3 {
     line-height: 1.2;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 25px;
     font-weight: 700;
     color: #c66f82;
     text-decoration: none;
 }
-<<<<<<< HEAD
-img {
-    max-width: 100%;
-}
-.logo {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    color: #c66f82;
-    text-decoration: none;
-
-}
-
-p{
-    font-size: 20px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container {
-    width: min(1120px, 90%);
-    margin: 0 auto;
-    padding: 30px;
-}
-.button{
-    
-    padding: 12px 24px;
-
-    background-color: #c66f82;
-    color: white;
-
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-}
-.section {
-    padding: 80px 0;
-}
-.header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top:20px;
-    padding:20px;
-    background-color:hsl(327, 100%, 91%) ;
-}
-.section-heading{
-    font-size: 20px;
-    font-family: "Segoe UI", Arial, sans-serif;
-=======
 
 h1 {
     font-size: 3rem;
@@ -109,9 +49,27 @@ h2 {
     font-size: 2.3rem;
 }
 
+h3 {
+    font-size: 25px;
+}
+
 p {
     margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* LOGO */
+
+.logo {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #c66f82;
+    text-decoration: none;
+}
+
+/* HEADER */
 
 .site-header .container {
     display: flex;
@@ -119,8 +77,13 @@ p {
     align-items: center;
     margin-top: 20px;
     padding: 20px;
-    background-color:hsl(327, 100%, 91%)
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
+    background-color: hsl(327, 100%, 91%);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .main-nav a {
@@ -130,12 +93,6 @@ p {
     color: #3b292c;
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
 }
 
 .main-nav a.active {
@@ -149,23 +106,16 @@ p {
     margin-top: 4px;
     background-color: #c66f82;
 }
-<<<<<<< HEAD
-.order-button{
-    padding:10px;
-    background-color:#c66f82 ;
-    color:white;
-    border-radius:10px;
-    margin-left:250px;
-=======
 
-
-.logo {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    color: #c66f82;
-    text-decoration: none;
+.order-button {
+    padding: 10px;
+    background-color: #c66f82;
+    color: white;
+    border-radius: 10px;
+    margin-left: 250px;
 }
+
+/* HERO */
 
 .hero {
     padding: 80px 0;
@@ -193,6 +143,8 @@ p {
     display: block;
     border-radius: 20px;
 }
+
+/* BENEFITS */
 
 .benefits-list {
     display: flex;
@@ -222,26 +174,36 @@ p {
     border: 1px solid #eadbdd;
     border-radius: 30px;
     background-color: #fff8f6;
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 }
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 0;
+}
+
+.section-heading {
+    font-size: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* CAKES */
 
 .cake-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-<<<<<<< HEAD
-.cake-card {
-    background: hsl(327, 100%, 91%);
-    border-radius: 12px;
-    overflow: hidden;
-=======
 
 .cake-card {
     overflow: hidden;
     border-radius: 16px;
     background: hsl(327, 100%, 91%);
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
+    transition: transform 0.3s ease;
+}
+
+.cake-card:hover {
+    transform: translateY(-5px);
 }
 
 .cake-card img {
@@ -254,7 +216,6 @@ p {
     padding: 20px;
 }
 
-<<<<<<< HEAD
 .cake-card h3 {
     margin-bottom: 10px;
 }
@@ -262,43 +223,32 @@ p {
 .cake-card p {
     line-height: 1.6;
 }
-=======
+
 .cake-card-content strong {
     display: block;
     margin-top: 12px;
 }
 
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
-.cake-card {
-    transition: transform 0.3s ease;
-}
+/* BUTTONS */
 
-.cake-card:hover {
-    transform: translateY(-5px);
-}
-<<<<<<< HEAD
 .button {
     display: inline-block;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 12px 24px;
+    background-color: #c66f82;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
     transform: translateY(-2px);
 }
-
-a:focus,
-button:focus {
-    outline: 3px solid #DFA7A7;
-    outline-offset: 3px;
-}
-.request .container{
-    background-color:hsl(327, 100%, 91%);
-}
-.custom-cake{
-    background-color: hsl(327, 100%, 91%);
-=======
 
 .btn {
     display: inline-block;
@@ -308,8 +258,31 @@ button:focus {
     transition: 0.3s ease;
 }
 
+.btn-primary {
+    padding: 10px;
+    background-color: #c66f82;
+    color: white;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
 .btn-primary:hover {
     transform: translateY(-2px);
+}
+
+.btn-secondary {
+    padding: 10px;
+    background-color: #c66f82;
+    color: white;
+    border-radius: 10px;
+}
+
+/* FOCUS */
+
+a:focus,
+button:focus {
+    outline: 3px solid #DFA7A7;
+    outline-offset: 3px;
 }
 
 a:focus-visible,
@@ -319,7 +292,17 @@ input:focus-visible {
     outline-offset: 3px;
 }
 
+/* REQUEST / CUSTOM CAKE */
 
+.request .container {
+    background-color: hsl(327, 100%, 91%);
+}
+
+.custom-cake {
+    background-color: hsl(327, 100%, 91%);
+}
+
+/* CTA */
 
 .cta-content {
     display: flex;
@@ -338,13 +321,7 @@ input:focus-visible {
     margin-top: 30px;
 }
 
-.btn-primary {
-    padding:10px;
-    background-color:#c66f82 ;
-    color:white;
-    border-radius:10px;
-    margin-left:250px;
-}
+/* FOOTER */
 
 .site-footer {
     background: hsl(327, 100%, 91%);
@@ -353,12 +330,4 @@ input:focus-visible {
 
 .footerhead {
     text-align: center;
-}
-
-.btn-secondary {
-    padding:10px;
-    background-color:#c66f82 ;
-    color:white;
-    border-radius:10px;
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 }
