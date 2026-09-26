@@ -227,12 +227,14 @@ input:focus-visible {
 }
 
 .btn-primary {
-    padding:10px;
-    background-color:#c66f82 ;
-    color:white;
-    border-radius:10px;
-    margin-left:250px;
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #c66f82;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
 }
+
 
 .site-footer {
     background: hsl(327, 100%, 91%);
