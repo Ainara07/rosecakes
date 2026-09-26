@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: #48361d;
     line-height: 1.6;
@@ -22,20 +22,18 @@ img {
 .container {
     width: min(1120px, 90%);
     margin: 0 auto;
-    padding: 30px;
 }
 
 section {
     padding: 50px 0;
 }
 
-
-
 h1,
 h2,
 h3 {
     line-height: 1.2;
     font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 25px;
     font-weight: 700;
     color: #c66f82;
     text-decoration: none;
@@ -49,27 +47,9 @@ h2 {
     font-size: 2.3rem;
 }
 
-h3 {
-    font-size: 25px;
-}
-
 p {
     margin-bottom: 1rem;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
-
-.logo {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    color: #c66f82;
-    text-decoration: none;
-}
-
-
 
 .site-header .container {
     display: flex;
@@ -77,13 +57,7 @@ p {
     align-items: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: hsl(327, 100%, 91%);
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    background-color:hsl(327, 100%, 91%)
 }
 
 .main-nav a {
@@ -93,6 +67,12 @@ p {
     color: #3b292c;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .main-nav a.active {
@@ -107,15 +87,14 @@ p {
     background-color: #c66f82;
 }
 
-.order-button {
-    padding: 10px;
-    background-color: #c66f82;
-    color: white;
-    border-radius: 10px;
-    margin-left: 250px;
+
+.logo {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #c66f82;
+    text-decoration: none;
 }
-
-
 
 .hero {
     padding: 80px 0;
@@ -143,8 +122,6 @@ p {
     display: block;
     border-radius: 20px;
 }
-
-
 
 .benefits-list {
     display: flex;
@@ -176,19 +153,6 @@ p {
     background-color: #fff8f6;
 }
 
-
-
-.section {
-    padding: 80px 0;
-}
-
-.section-heading {
-    font-size: 20px;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-
-
 .cake-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -199,11 +163,6 @@ p {
     overflow: hidden;
     border-radius: 16px;
     background: hsl(327, 100%, 91%);
-    transition: transform 0.3s ease;
-}
-
-.cake-card:hover {
-    transform: translateY(-5px);
 }
 
 .cake-card img {
@@ -216,37 +175,17 @@ p {
     padding: 20px;
 }
 
-.cake-card h3 {
-    margin-bottom: 10px;
-}
-
-.cake-card p {
-    line-height: 1.6;
-}
-
 .cake-card-content strong {
     display: block;
     margin-top: 12px;
 }
 
-
-.button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #c66f82;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.cake-card {
+    transition: transform 0.3s ease;
 }
 
-.button:hover {
-    transform: translateY(-2px);
+.cake-card:hover {
+    transform: translateY(-5px);
 }
 
 .btn {
@@ -257,30 +196,8 @@ p {
     transition: 0.3s ease;
 }
 
-.btn-primary {
-    padding: 10px;
-    background-color: #c66f82;
-    color: white;
-    border-radius: 10px;
-    margin-left: 250px;
-}
-
 .btn-primary:hover {
     transform: translateY(-2px);
-}
-
-.btn-secondary {
-    padding: 10px;
-    background-color: #c66f82;
-    color: white;
-    border-radius: 10px;
-}
-
-
-a:focus,
-button:focus {
-    outline: 3px solid #DFA7A7;
-    outline-offset: 3px;
 }
 
 a:focus-visible,
@@ -288,16 +205,6 @@ button:focus-visible,
 input:focus-visible {
     outline: 3px solid currentColor;
     outline-offset: 3px;
-}
-
-
-
-.request .container {
-    background-color: hsl(327, 100%, 91%);
-}
-
-.custom-cake {
-    background-color: hsl(327, 100%, 91%);
 }
 
 
@@ -319,7 +226,13 @@ input:focus-visible {
     margin-top: 30px;
 }
 
-
+.btn-primary {
+    padding:10px;
+    background-color:#c66f82 ;
+    color:white;
+    border-radius:10px;
+    margin-left:250px;
+}
 
 .site-footer {
     background: hsl(327, 100%, 91%);
@@ -328,4 +241,11 @@ input:focus-visible {
 
 .footerhead {
     text-align: center;
+}
+
+.btn-secondary {
+    padding:10px;
+    background-color:#c66f82 ;
+    color:white;
+    border-radius:10px;
 }
