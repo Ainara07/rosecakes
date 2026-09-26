@@ -9,10 +9,31 @@ html {
 body {
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+<<<<<<< HEAD
+=======
+    font-size: 20px;
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
     color: #48361d;
     line-height: 1.6;
     background: #ffefec;
 }
+<<<<<<< HEAD
+=======
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 h1,
 h2,
 h3 {
@@ -23,6 +44,7 @@ h3 {
     color: #c66f82;
     text-decoration: none;
 }
+<<<<<<< HEAD
 img {
     max-width: 100%;
 }
@@ -77,6 +99,28 @@ p{
 .section-heading{
     font-size: 20px;
     font-family: "Segoe UI", Arial, sans-serif;
+=======
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color:hsl(327, 100%, 91%)
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 }
 
 .main-nav a {
@@ -105,12 +149,80 @@ p{
     margin-top: 4px;
     background-color: #c66f82;
 }
+<<<<<<< HEAD
 .order-button{
     padding:10px;
     background-color:#c66f82 ;
     color:white;
     border-radius:10px;
     margin-left:250px;
+=======
+
+
+.logo {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #c66f82;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    margin: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.benefit-card {
+    position: relative;
+    flex: 1;
+    padding: 10px 30px;
+}
+
+.benefit-card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 1px;
+    height: calc(100% - 30px);
+    background-color: #5d474a;
+    border-radius: 999px;
+}
+
+.benefits-box {
+    padding: 50px;
+    border: 1px solid #eadbdd;
+    border-radius: 30px;
+    background-color: #fff8f6;
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 }
 
 .cake-grid {
@@ -118,10 +230,18 @@ p{
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
+<<<<<<< HEAD
 .cake-card {
     background: hsl(327, 100%, 91%);
     border-radius: 12px;
     overflow: hidden;
+=======
+
+.cake-card {
+    overflow: hidden;
+    border-radius: 16px;
+    background: hsl(327, 100%, 91%);
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 }
 
 .cake-card img {
@@ -134,6 +254,7 @@ p{
     padding: 20px;
 }
 
+<<<<<<< HEAD
 .cake-card h3 {
     margin-bottom: 10px;
 }
@@ -141,6 +262,13 @@ p{
 .cake-card p {
     line-height: 1.6;
 }
+=======
+.cake-card-content strong {
+    display: block;
+    margin-top: 12px;
+}
+
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 .cake-card {
     transition: transform 0.3s ease;
 }
@@ -148,6 +276,7 @@ p{
 .cake-card:hover {
     transform: translateY(-5px);
 }
+<<<<<<< HEAD
 .button {
     display: inline-block;
     padding: 12px 20px;
@@ -169,4 +298,67 @@ button:focus {
 }
 .custom-cake{
     background-color: hsl(327, 100%, 91%);
+=======
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.catalog-link {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3b292c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    padding:10px;
+    background-color:#c66f82 ;
+    color:white;
+    border-radius:10px;
+    margin-left:250px;
+}
+
+.site-footer {
+    background: hsl(327, 100%, 91%);
+    min-height: 300px;
+}
+
+.footerhead {
+    text-align: center;
+}
+
+.btn-secondary {
+    padding:10px;
+    background-color:#c66f82 ;
+    color:white;
+    border-radius:10px;
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
 }

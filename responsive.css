@@ -1,4 +1,5 @@
 @media (max-width: 900px) {
+<<<<<<< HEAD
 
     .cake-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -12,3 +13,17 @@
     }
 
 }
+=======
+    .cake-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cake-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+>>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
