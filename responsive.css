@@ -1,29 +1,316 @@
-@media (max-width: 900px) {
-<<<<<<< HEAD
-
-    .cake-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
+/*tablet version*/
 @media (max-width: 900px) {
 
     .cake-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
-}
-=======
-    .cake-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
+/* mobile version */
 
 @media (max-width: 600px) {
+
+    
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+
+    
+
+    .site-header {
+        width: 100%;
+    }
+
+    .site-header .container {
+        width: 100%;
+        margin-top: 0;
+        padding: 25px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+    }
+
+    .main-nav a {
+        font-size: 15px;
+    }
+
+
+    
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+
+    
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        margin-top: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    .hero-image figcaption {
+        margin-top: 8px;
+    }
+
+
+    
+
+    .benefits-box {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .benefits-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .benefit-card {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    
+    .benefit-card:not(:last-child)::after {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+    }
+
+
+    
+
     .cake-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
+
+    .cake-card {
+        width: 100%;
+    }
+
+    .cake-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cake-card-content {
+        padding: 18px;
+    }
+
+
+    
+
+    .catalog-link {
+        margin-top: 25px;
+    }
+
+
+    
+
+    .cta-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .btn-primary {
+        margin-left: 0;
+        padding: 12px 22px;
+    }
+
+
+    
+
+    .site-footer {
+        width: 100%;
+        max-width: 100%;
+        min-height: 280px;
+    
+        margin: 0;
+    }
+
+    .footerhead {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerhead h2 {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+}
+
+/* =========================
+   ABOUT - TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .stats-flex {
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        flex: 1 1 45%;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 
->>>>>>> 0e17549ee6bb2df6fed48df12d5889861ce5a5bf
+/*about mobile version*/
+
+@media (max-width: 600px) {
+
+    .page-title-section {
+        padding: 50px 0;
+    }
+
+    .page-title-section h1 {
+        font-size: 2.3rem;
+        line-height: 1.15;
+    }
+
+    .page-title-section p {
+        font-size: 17px;
+    }
+
+
+    .about-story-section {
+        padding: 40px 0;
+    }
+
+    .story-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .story-content h2 {
+        font-size: 2rem;
+    }
+
+    .story-content p {
+        font-size: 17px;
+    }
+
+
+    .stats-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+
+
+    .process-section,
+    .team-section {
+        padding: 40px 0;
+    }
+
+    .process-section > h2,
+    .team-section > h2 {
+        width: 100%;
+        padding: 0 24px;
+        font-size: 2rem;
+    }
+
+
+    .process-grid {
+        width: 100%;
+        padding: 0 24px;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .team-grid {
+        width: 100%;
+        padding: 0 24px;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+}
