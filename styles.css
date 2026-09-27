@@ -28,17 +28,20 @@ h3 {
 }
 
 .header-container {
+    width: min(1120px, 90%);
+    margin: 20px auto 0;
+    padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color:hsl(327, 100%, 91%)
+
+    background-color: hsl(327, 100%, 91%);
 }
 
 .logo {
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 700;
     color: #c66f82;
     text-decoration: none;
