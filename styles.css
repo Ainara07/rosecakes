@@ -28,11 +28,6 @@ h3 {
     text-decoration: none;
 }
 
-.header {
-    top: 0;
-    background: hsl(327, 100%, 91%);
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
