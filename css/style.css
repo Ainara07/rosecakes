@@ -79,11 +79,6 @@ p {
     background-color: hsl(327, 100%, 91%);
 }
 
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
 
 .main-nav a {
     font-family: "Segoe UI", Arial, sans-serif;

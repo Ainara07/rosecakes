@@ -47,11 +47,6 @@ h3 {
     text-decoration: none;
 }
 
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
 
 .main-nav a {
     font-family: "Segoe UI", Arial, sans-serif;
@@ -99,10 +94,12 @@ h3 {
 }
 
 .order-section {
-    padding: 0px 320px;
+    padding: 0 1rem 3rem;
 }
 
 .order-section > .container {
+    max-width: 900px;
+    margin-inline: auto;
     background: #fff9f7;
     padding: 45px;
     border-radius: 20px;
@@ -137,7 +134,7 @@ h3 {
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -263,86 +260,19 @@ h3 {
     color: #c66f82;
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .main-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .order-intro {
-        padding: 55px 0 30px;
-    }
-
-    .order-intro h1 {
-        font-size: 32px;
-    }
-
-    .order-section > .container,
-    .faq-section > .container {
-        padding: 30px;
-    }
-
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-group.full-width {
-        grid-column: auto;
-    }
+.faq-item {
+    margin-bottom: 15px;
+    padding: 18px 20px;
+    background: #fff9f7;
+    border-radius: 12px;
 }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 17px;
-    }
-
-    .container {
-        width: 92%;
-    }
-
-    .logo {
-        font-size: 23px;
-    }
-
-    .main-nav {
-        gap: 14px;
-    }
-
-    .main-nav a {
-        font-size: 14px;
-    }
-
-    .order-intro h1 {
-        font-size: 28px;
-    }
-
-    .order-section > .container,
-    .faq-section > .container {
-        padding: 22px;
-        border-radius: 15px;
-    }
-
-    .order-section h2,
-    .faq-section h2 {
-        font-size: 25px;
-    }
-
-    .order-button {
-        width: 100%;
-        text-align: center;
-    }
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #3b292c;
 }
-@media (max-width: 768px) {
-    .order-section {
-        padding: 0 20px;
-    }
 
-    .order-section > .container {
-        width: 100%;
-    }
+.faq-item p {
+    margin-top: 12px;
 }
