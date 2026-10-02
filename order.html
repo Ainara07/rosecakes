@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rose Cakes</title>
+    <title>Order | Rose Cakes</title>
     <link rel="icon" type="image/png" href="images/icon_rc.png">
     <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -42,151 +42,72 @@
         <div class="container">
 
             <h2>Place Your Order</h2>
+            <p id="demo-note">
+    Demo only. Your information is not sent or stored. Use sample details.
+</p>
 
-            <form class="order-form">
 
-    <section class="form-section">
-        <h3>Cake Selection</h3>
+          <form class="order-form"
+      action="demo-result.html"
+      method="get"
+      aria-describedby="demo-note">
 
-        <div class="form-grid">
+    <div class="form-grid">
 
-            <div class="form-group">
-                <label for="flavor">Cake Flavor</label>
-                <select id="flavor" name="flavor" required>
-                    <option value="">Choose a flavor</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="vanilla">Vanilla</option>
-                    <option value="red-velvet">Red Velvet</option>
-                    <option value="strawberry">Strawberry</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="size">Cake Size</label>
-                <select id="size" name="size" required>
-                    <option value="">Choose a size</option>
-                    <option value="small">Small - 6 servings</option>
-                    <option value="medium">Medium - 12 servings</option>
-                    <option value="large">Large - 20 servings</option>
-                    <option value="extra-large">Extra Large - 30 servings</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="occasion">Occasion</label>
-                <select id="occasion" name="occasion">
-                    <option value="">Choose an occasion</option>
-                    <option value="birthday">Birthday</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="anniversary">Anniversary</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="quantity">Quantity</label>
-                <input
-                    type="number"
-                    id="quantity"
-                    name="quantity"
-                    min="1"
-                    value="1"
-                    required
-                >
-            </div>
-
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+                id="full-name"
+                type="text"
+                required>
         </div>
-    </section>
 
-    <section class="form-section">
-        <h3>Customer Information</h3>
-
-        <div class="form-grid">
-
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Your full name"
-                    required
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+7 700 000 00 00"
-                    required
-                >
-            </div>
-
-            <div class="form-group full-width">
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="example@email.com"
-                    required
-                >
-            </div>
-
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                id="email"
+                type="email"
+                required>
         </div>
-    </section>
 
-    <section class="form-section">
-        <h3>Order Details</h3>
-
-        <div class="form-grid">
-
-            <div class="form-group">
-                <label for="date">Pickup or Delivery Date</label>
-                <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    required
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="delivery">Order Method</label>
-                <select id="delivery" name="delivery" required>
-                    <option value="">Choose an option</option>
-                    <option value="pickup">Pickup</option>
-                    <option value="delivery">Delivery</option>
-                </select>
-            </div>
-
-            <div class="form-group full-width">
-                <label for="message">Cake Message</label>
-                <input
-                    type="text"
-                    id="message"
-                    name="message"
-                    placeholder="For example: Happy Birthday!"
-                >
-            </div>
-
-            <div class="form-group full-width">
-                <label for="notes">Special Requests</label>
-                <textarea
-                    id="notes"
-                    name="notes"
-                    placeholder="Describe colors, decorations or other wishes..."
-                ></textarea>
-            </div>
-
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+                id="phone"
+                type="tel"
+                required>
         </div>
-    </section>
+
+        <div class="form-group">
+            <label for="cake">Choose a Cake</label>
+            <select id="cake" required>
+                <option value="">Select a cake</option>
+                <option>Chocolate Dream</option>
+                <option>Strawberry Delight</option>
+                <option>Red Velvet</option>
+                <option>Custom Cake</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Order Date</label>
+            <input
+                id="date"
+                type="date"
+                required>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="details">Additional Details</label>
+            <textarea
+                id="details"
+                rows="5"></textarea>
+        </div>
+
+    </div>
 
     <button type="submit" class="order-button">
-        Place Order
+        Check Demo Order
     </button>
 
 </form>
@@ -194,45 +115,29 @@
         </div>
     </section>
 
-   <section class="faq-section">
+   <section class="faq-section" id="faq">
     <div class="container">
         <h2>Frequently Asked Questions</h2>
 
-        <div class="faq-list">
+        <details class="faq-item">
+            <summary>How early should I place my order?</summary>
+            <p>We recommend placing your order several days before the required date.</p>
+        </details>
 
-            <div class="faq-item">
-                <h3>How early should I place my order?</h3>
-                <p>
-                    We recommend placing your order at least 3 days before
-                    your celebration.
-                </p>
-            </div>
+        <details class="faq-item">
+            <summary>Can I request a custom cake design?</summary>
+            <p>Yes. You can describe your preferred design and additional details in the order form.</p>
+        </details>
 
-            <div class="faq-item">
-                <h3>Can I request a custom cake design?</h3>
-                <p>
-                    Yes. You can describe your preferred colors, decorations
-                    and design in the Special Requests field.
-                </p>
-            </div>
+        <details class="faq-item">
+            <summary>Do you offer delivery?</summary>
+            <p>Delivery options depend on the order details and location.</p>
+        </details>
 
-            <div class="faq-item">
-                <h3>Do you offer delivery?</h3>
-                <p>
-                    Yes. You can choose between pickup and delivery when
-                    completing the order form.
-                </p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Can I add a message to the cake?</h3>
-                <p>
-                    Yes. Enter the message you would like on your cake
-                    in the Cake Message field.
-                </p>
-            </div>
-
-        </div>
+        <details class="faq-item">
+            <summary>Can I add a custom message to the cake?</summary>
+            <p>Yes. You can include a custom message in the additional details field.</p>
+        </details>
     </div>
 </section>
 
