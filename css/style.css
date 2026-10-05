@@ -106,10 +106,15 @@ p {
     background-color: #c66f82;
     color: white;
     border-radius: 10px;
-    margin-left: 250px;
+    text-decoration: none;
 }
 
-
+.cake-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
 
 .hero {
     padding: 80px 0;
