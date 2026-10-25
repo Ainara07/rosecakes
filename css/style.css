@@ -106,15 +106,10 @@ p {
     background-color: #c66f82;
     color: white;
     border-radius: 10px;
-    text-decoration: none;
+    margin-left: 250px;
 }
 
-.cake-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
+
 
 .hero {
     padding: 80px 0;
@@ -327,4 +322,47 @@ input:focus-visible {
 
 .footerhead {
     text-align: center;
+}
+
+.cake-search-controls {
+    max-width: 500px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.cake-search-controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #48361d;
+}
+
+#cake-search {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c66f82;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+}
+
+#cake-search:focus {
+    outline: 2px solid #c66f82;
+}
+
+#search-count {
+    margin-top: 12px;
+    color: #48361d;
+}
+
+#no-results {
+    text-align: center;
+    padding: 20px;
+    color: #c66f82;
+    font-weight: bold;
+}
+
+.cake-grid .cake-card[hidden],
+#no-results[hidden] {
+    display: none !important;
 }

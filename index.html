@@ -221,6 +221,135 @@
 
 </section>
 
+<section class="welcome-section">
+    <div class="container">
+
+        <h2>Welcome to Rose Cakes!</h2>
+
+        <label for="welcome-name">
+            Enter your name:
+        </label>
+
+        <input
+            type="text"
+            id="welcome-name"
+            placeholder="Your name"
+        >
+
+        <button type="button" id="welcome-button">
+            Say Hello
+        </button>
+
+        <p id="welcome-message" aria-live="polite"></p>
+            <button type="button"
+                id="theme-toggle"
+                aria-pressed="false">
+                Switch to Dark Theme
+            </button>
+
+    </div>
+</section>
+
+<section class="dom-faq">
+    <div class="container">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="dom-faq-list">
+
+            <div class="dom-faq-item">
+                <button type="button"
+                        class="faq-question"
+                        aria-expanded="false"
+                        aria-controls="faq-answer-1">
+                    How can I order a cake?
+                </button>
+
+                <p id="faq-answer-1"
+                   class="faq-answer"
+                   hidden>
+                    You can order a cake using our Order page.
+                </p>
+            </div>
+
+            <div class="dom-faq-item">
+                <button type="button"
+                        class="faq-question"
+                        aria-expanded="false"
+                        aria-controls="faq-answer-2">
+                    Can I customize my cake?
+                </button>
+
+                <p id="faq-answer-2"
+                   class="faq-answer"
+                   hidden>
+                    Yes! You can choose your favourite
+                    design, flavour and decorations.
+                </p>
+            </div>
+
+            <div class="dom-faq-item">
+                <button type="button"
+                        class="faq-question"
+                        aria-expanded="false"
+                        aria-controls="faq-answer-3">
+                    Do you offer delivery?
+                </button>
+
+                <p id="faq-answer-3"
+                   class="faq-answer"
+                   hidden>
+                    Delivery options depend on your
+                    order details and location.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="favourites-section">
+    <div class="container">
+
+        <h2>My Favourite Cakes</h2>
+
+        <p>Add your favourite cakes to the list!</p>
+
+        <form id="favourite-form">
+
+            <label for="favourite-input">
+                Cake Name:
+            </label>
+
+            <div class="favourite-controls">
+                <input
+                    type="text"
+                    id="favourite-input"
+                    placeholder="Enter cake name"
+                >
+
+                <button type="submit" id="add-favourite">
+                    Add
+                </button>
+            </div>
+
+        </form>
+
+        <p id="favourite-feedback"
+           role="status"
+           aria-live="polite"></p>
+
+        <ul id="favourite-list"></ul>
+
+        <p id="favourite-count" aria-live="polite">
+            Total favourites: 0
+        </p>
+
+    </div>
+</section>
+
+
+
 </main>
 
 <footer class="site-footer">
@@ -238,6 +367,6 @@
     </div>
 
 </footer>
-
+<script src="js/dom.js"></script>
 </body>
 </html>

@@ -63,6 +63,27 @@
 
             <p>
                 Choose from our most popular handmade cakes.
+
+<div class="cake-search-controls">
+
+    <label for="cake-search">
+        Search cakes:
+    </label>
+
+    <input
+        type="search"
+        id="cake-search"
+        placeholder="Enter cake name..."
+    >
+
+    <p id="search-count"
+       role="status"
+       aria-live="polite">
+        Showing 6 of 6 cakes
+    </p>
+
+</div>
+
             </p>
         </div>
 
@@ -219,6 +240,11 @@
                             Order
                         </a>
                     </div>
+                    
+<p id="no-results" hidden>
+    No results found.
+</p>
+
 
                 </div>
             </article>
@@ -270,7 +296,7 @@
 
 </body>
 </html>
-
+<script src="js/catalog-search.js"></script>
     
 </body>
 </html>

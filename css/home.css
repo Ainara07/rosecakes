@@ -250,3 +250,275 @@ input:focus-visible {
     color:white;
     border-radius:10px;
 }
+
+
+
+.welcome-section {
+    padding: 50px 20px;
+    background-color: #ffefec;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    color: #c66f82;
+    margin-bottom: 20px;
+}
+
+.welcome-section input {
+    padding: 12px;
+    border: 1px solid #c66f82;
+    border-radius: 6px;
+    max-width: 100%;
+}
+
+.welcome-section button {
+    padding: 12px 20px;
+    background-color: #c66f82;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#welcome-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+
+/* Task 1 - Light and Dark Theme */
+
+/* Theme switcher button */
+
+#theme-toggle {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 20px;
+    background-color: #48361d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+body.dark-theme {
+    background-color: #211d29;
+    color: #f5ebf0;
+}
+
+body.dark-theme .welcome-section {
+    background-color: #211d29;
+}
+
+body.dark-theme .site-header .container,
+body.dark-theme .site-footer {
+    background-color: #382a3e;
+}
+
+body.dark-theme .benefits-box,
+body.dark-theme .cake-card {
+    background-color: #352c3b;
+    border-color: #675468;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme .logo {
+    color: #f1afc2;
+}
+
+body.dark-theme .main-nav a,
+body.dark-theme .catalog-link {
+    color: #f5ebf0;
+}
+
+body.dark-theme .main-nav a.active {
+    color: #f1afc2;
+}
+
+body.dark-theme .benefit-card:not(:last-child)::after {
+    background-color: #78697e;
+}
+
+body.dark-theme #theme-toggle {
+    background-color: #f1afc2;
+    color: #211d29;
+}
+
+body.dark-theme #welcome-message {
+    color: #f5ebf0;
+}
+
+.dom-faq {
+    padding: 50px 20px;
+    background-color: #ffefec;
+}
+
+.dom-faq h2 {
+    text-align: center;
+    color: #c66f82;
+    margin-bottom: 25px;
+}
+
+.dom-faq-list {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.dom-faq-item {
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background-color: #f8d6df;
+    color: #48361d;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #efbbc9;
+}
+
+.faq-question:focus-visible {
+    outline: 3px solid #8053a0;
+    outline-offset: -3px;
+}
+
+.faq-answer {
+    padding: 18px;
+    margin: 0;
+    color: #48361d;
+}
+
+.faq-answer[hidden] {
+    display: none;
+}
+
+/* Dark theme support */
+
+body.dark-theme .dom-faq {
+    background-color: #211d29;
+}
+
+body.dark-theme .dom-faq-item {
+    background-color: #352c3b;
+}
+
+body.dark-theme .faq-question {
+    background-color: #554059;
+    color: #ffffff;
+}
+
+body.dark-theme .faq-question:hover {
+    background-color: #715775;
+}
+
+body.dark-theme .faq-answer {
+    color: #f5ebf0;
+}
+
+.favourites-section {
+    padding: 50px 20px;
+    background-color: #ffefec;
+    text-align: center;
+}
+
+.favourites-section h2 {
+    color: #c66f82;
+    margin-bottom: 15px;
+}
+
+.favourite-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#favourite-input {
+    padding: 12px;
+    border: 1px solid #c66f82;
+    border-radius: 8px;
+    width: 260px;
+    max-width: 100%;
+}
+
+#add-favourite {
+    padding: 12px 25px;
+    background-color: #c66f82;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#favourite-list {
+    list-style: none;
+    padding: 0;
+    max-width: 450px;
+    margin: 25px auto;
+}
+
+#favourite-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#favourite-list li button {
+    padding: 8px 12px;
+    background-color: #c66f82;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#favourite-count {
+    font-weight: bold;
+}
+
+#favourite-feedback {
+    margin-top: 10px;
+    color: #a43c54;
+}
+
+
+
+body.dark-theme .favourites-section {
+    background-color: #211d29;
+    color: #f5ebf0;
+}
+
+body.dark-theme #favourite-list li {
+    background-color: #352c3b;
+    color: #f5ebf0;
+}
+
+body.dark-theme #favourite-count {
+    color: #f5ebf0;
+}
+
+body.dark-theme #favourite-feedback {
+    color: #ffb3c6;
+}
