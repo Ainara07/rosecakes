@@ -276,3 +276,28 @@ h3 {
 .faq-item p {
     margin-top: 12px;
 }
+
+
+#contact-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5dce4;
+    color: #48361d;
+    border: 1px solid #c66f82;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+body.dark-theme #contact-result {
+    background-color: #352c3b;
+    color: #f5ebf0;
+    border-color: #826c88;
+}
+
+body.dark-theme .invalid-feedback {
+    color: #ffb3c6;
+}
+
+body.dark-theme .valid-feedback {
+    color: #a5e5c2;
+}

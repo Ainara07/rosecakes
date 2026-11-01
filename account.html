@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Account | Rose Cakes</title>
+
+    <link rel="icon" type="image/png" href="images/icon_rc.png">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+    <div class="theme-bar">
+        <div class="container">
+            <button
+                type="button"
+                id="theme-toggle"
+                aria-pressed="false">
+                Switch to Dark Theme
+            </button>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                Rose Cakes
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="about.html">About Us</a>
+                <a href="order.html">Order</a>
+                <a href="contact.html">Contact</a>
+                <a href="registration.html">Register</a>
+
+                <a
+                    href="account.html"
+                    class="active"
+                    aria-current="page">
+                    My Account
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="account-page">
+        <div class="container">
+
+            <div class="account-intro">
+
+                <span class="welcome-kicker">
+                    YOUR SWEET COLLECTION
+                </span>
+
+                <h1>My Account</h1>
+
+                <p>
+                    Welcome to your Rose Cakes demo profile.
+                </p>
+
+                <p class="account-note">
+                    This is a frontend-only demo, not a real login.
+                    Your favourite cake names are saved in this browser.
+                </p>
+
+            </div>
+
+            <section class="account-card">
+
+                <h2>My Favourite Cakes</h2>
+
+                <p>
+                    Add your favourite cakes to the list.
+                </p>
+
+                <form id="favourite-form">
+
+                    <label for="favourite-input">
+                        Cake Name
+                    </label>
+
+                    <div class="favourite-controls">
+
+                        <input
+                            type="text"
+                            id="favourite-input"
+                            placeholder="Enter cake name"
+                            autocomplete="off"
+                        >
+
+                        <button type="submit">
+                            Add
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <p
+                    id="favourite-feedback"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+                <ul id="favourite-list"></ul>
+
+                <p id="favourite-empty">
+                    No favourite cakes yet.
+                    <a href="catalog.html">
+                        Explore the catalog
+                    </a>
+                    for ideas.
+                </p>
+
+                <p
+                    id="favourite-count"
+                    aria-live="polite">
+                    Total favourites: 0
+                </p>
+
+            </section>
+
+            <div class="account-actions">
+
+                <a href="catalog.html" class="btn-secondary">
+                    Browse Cakes
+                </a>
+
+                <a href="order.html" class="btn-secondary">
+                    Order a Cake
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <p>Rose Cakes</p>
+
+            <p>
+                © 2026 Rose Cakes. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/account.js"></script>
+
+</body>
+</html>

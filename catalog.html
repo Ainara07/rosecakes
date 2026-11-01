@@ -1,69 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Catalog | Rose Cakes</title>
+
+    <link rel="icon" type="image/png" href="images/icon_rc.png">
+
     <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="image/jpg" href="images/icon_rc.png">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
+
 <body>
-   <header class="site-header">
-    <div class="container">
 
-        <a href="index.html" class="logo">Rose Cakes</a>
-
-        <nav class="main-nav">
-            <a href="index.html" >Home</a>
-            <a href="catalog.html" class="active">Catalog</a>
-            <a href="about.html">About Us</a>
-            <a href="order.html">Order</a>
-            <a href="contact.html">Contact</a>
-            <a href="registration.html">Register</a>
-
-        </nav>
-
+    <div class="theme-bar">
+        <div class="container">
+            <button
+                type="button"
+                id="theme-toggle"
+                aria-pressed="false">
+                Switch to Dark Theme
+            </button>
+        </div>
     </div>
- </header>
-<main> 
-    <section> 
-        <div class="container"> 
-           
-            <h1> Choose your perfect cake </h1> 
-            <p> 
-                Explore our collection of freshly baked cakes
-            made for birthdays, celebrations and special moments.
-            </p>
-            <button class="button">
-                Birthday
-            </button>
 
-            <button class="button">
-                Wedding
-            </button>
+    <header class="site-header">
+        <div class="container">
 
-            <button class="button">
-                Chocolate
-            </button>
+            <a href="index.html" class="logo">
+                Rose Cakes
+            </a>
 
-            <button class="button">
-                Fruit
-            </button>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+
+                <a href="catalog.html"
+                   class="active"
+                   aria-current="page">
+                    Catalog
+                </a>
+
+                <a href="about.html">About Us</a>
+                <a href="order.html">Order</a>
+                <a href="contact.html">Contact</a>
+                <a href="registration.html">Register</a>
+                <a href="account.html">My Account</a>
+            </nav>
 
         </div>
-    </section>
+    </header>
+
+    <main>
+
+        <section class="catalog-intro">
+            <div class="container">
+
+                <h1>Choose your perfect cake</h1>
+
+                <p>
+                    Explore our collection of freshly baked cakes
+                    made for birthdays, celebrations and special moments.
+                </p>
+
+                <div class="catalog-occasion">
+                    Birthday · Wedding · Chocolate · Fruit
+                </div>
+
+            </div>
+        </section>
+
     
-    <section>
+        <section class="catalog-products">
+            <div class="container">
 
-    <div class="container">
+                <div class="section-heading">
+                    <h2>Our cakes</h2>
 
-        <div class="section-heading">
-            <h2>Our cakes</h2>
+                    <p>
+                        Choose from our most popular handmade cakes.
+                    </p>
+                </div>
 
-            <p>
-                Choose from our most popular handmade cakes.
-
+                
 <div class="cake-search-controls">
 
     <label for="cake-search">
@@ -76,6 +98,45 @@
         placeholder="Enter cake name..."
     >
 
+
+    <div class="category-filters"
+         role="group"
+         aria-label="Filter cakes by category">
+
+        <button type="button"
+                class="filter-btn active"
+                data-filter="all"
+                aria-pressed="true">
+            All
+        </button>
+
+        <button type="button"
+                class="filter-btn"
+                data-filter="chocolate"
+                aria-pressed="false">
+            Chocolate
+        </button>
+
+        <button type="button"
+                class="filter-btn"
+                data-filter="fruit"
+                aria-pressed="false">
+            Fruit
+        </button>
+
+        <button type="button"
+                class="filter-btn"
+                data-filter="classic"
+                aria-pressed="false">
+            Classic
+        </button>
+
+    </div>
+
+    <button type="button" id="clear-filters">
+        Clear Filters
+    </button>
+
     <p id="search-count"
        role="status"
        aria-live="polite">
@@ -84,219 +145,225 @@
 
 </div>
 
-            </p>
-        </div>
+                <div class="cake-grid">
 
-        <div class="cake-grid">
+                    <article class="cake-card" data-category="chocolate">
 
-            <article class="cake-card">
-                <img
-                    src="images/chocolate cake.png"
-                    alt="Chocolate cake with chocolate decoration"
-                >
+                        <img
+                            src="images/chocolate cake.png"
+                            alt="Chocolate cake with chocolate decoration"
+                        >
 
-                <div class="cake-card-content">
+                        <div class="cake-card-content">
 
-                    <h3>Chocolate dream</h3>
+                            <h3>Chocolate dream</h3>
 
-                    <p>
-                        Rich chocolate cake with creamy chocolate
-                        filling and chocolate decoration.
-                    </p>
+                            <p>
+                                Rich chocolate cake with creamy chocolate
+                                filling and chocolate decoration.
+                            </p>
 
-                    <div class="cake-card-footer">
-                        <span class="price">7500tg</span>
-                        <a href="order.html" class="order-button">
-                            Order
-                        </a>
-                    </div>
+                            <div class="cake-card-footer">
+                                <span class="price">7500tg</span>
 
-                </div>
-            </article>
+                                <a href="order.html" class="order-button">
+                                    Order
+                                </a>
+                            </div>
 
+                        </div>
+                    </article>
 
-            <article class="cake-card">
-                <img
-                    src="images/strawberry cake.png"
-                    alt="Strawberry cake with fresh strawberries"
-                >
+                    <article class="cake-card" data-category="fruit">
 
-                <div class="cake-card-content">
+                        <img
+                            src="images/strawberry cake.png"
+                            alt="Strawberry cake with fresh strawberries"
+                        >
 
-                    <h3>Strawberry delight</h3>
+                        <div class="cake-card-content">
 
-                    <p>
-                        Light vanilla sponge with strawberry
-                        cream and fresh strawberries.
-                    </p>
+                            <h3>Strawberry delight</h3>
 
-                    <div class="cake-card-footer">
-                        <span class="price">8300tg</span>
-                        <a href="order.html" class="order-button" >
-                            Order
-                        </a>
-                    </div>
+                            <p>
+                                Light vanilla sponge with strawberry
+                                cream and fresh strawberries.
+                            </p>
 
-                </div>
-            </article>
+                            <div class="cake-card-footer">
+                                <span class="price">8300tg</span>
 
+                                <a href="order.html" class="order-button">
+                                    Order
+                                </a>
+                            </div>
 
-            <article class="cake-card">
-                <img
-                    src="images/vanilla cake .png"
-                    alt="Vanilla cake with cream decoration"
-                >
+                        </div>
+                    </article>
 
-                <div class="cake-card-content">
+                    <article class="cake-card" data-category="classic">
 
-                    <h3>Vanilla classic</h3>
+                        <img
+                            src="images/vanilla cake .png"
+                            alt="Vanilla cake with cream decoration"
+                        >
 
-                    <p>
-                        Soft vanilla sponge with smooth cream
-                        and elegant decoration.
-                    </p>
+                        <div class="cake-card-content">
 
-                    <div class="cake-card-footer">
-                        <span class="price">7500tg</span>
-                        <a href="order.html" class="order-button">
-                            Order
-                        </a>
-                    </div>
+                            <h3>Vanilla classic</h3>
 
-                </div>
-            </article>
+                            <p>
+                                Soft vanilla sponge with smooth cream
+                                and elegant decoration.
+                            </p>
 
+                            <div class="cake-card-footer">
+                                <span class="price">7500tg</span>
 
-            <article class="cake-card">
-                <img
-                    src="images/red velvet.png"
-                    alt="Red velvet cake with cream cheese frosting"
-                >
+                                <a href="order.html" class="order-button">
+                                    Order
+                                </a>
+                            </div>
 
-                <div class="cake-card-content">
+                        </div>
+                    </article>
 
-                    <h3>Red velvet</h3>
-
-                    <p>
-                        Classic red velvet sponge with
-                        smooth cream cheese frosting.
-                    </p>
-
-                    <div class="cake-card-footer">
-                        <span class="price">7900$</span>
-                        <a href="order.html" class="order-button">
-                            Order
-                        </a>
-                    </div>
-
-                </div>
-            </article>
-
-
-            <article class="cake-card">
-                <img
-                    src="images/fruity cake.png"
-                    alt="Fruit cake decorated with fresh fruits"
-                >
-
-                <div class="cake-card-content">
-
-                    <h3>Fresh fruit cake</h3>
-
-                    <p>
-                        Fresh seasonal fruits combined with
-                        light cream and soft sponge.
-                    </p>
-
-                    <div class="cake-card-footer">
-                        <span class="price">8200tg</span>
-                        <a href="order.html" class="order-button">
-                            Order
-                        </a>
-                    </div>
-
-                </div>
-            </article>
-
-
-            <article class="cake-card">
-                <img
-                    src="images/caramel cake.png"
-                    alt="Caramel cake with caramel topping"
-                >
-
-                <div class="cake-card-content">
-
-                    <h3>Caramel heaven</h3>
-
-                    <p>
-                        Soft caramel cake with creamy filling
-                        and homemade caramel sauce.
-                    </p>
-
-                    <div class="cake-card-footer">
-                        <span class="price">8000tg</span>
-                        <a href="order.html" class="order-button">
-                            Order
-                        </a>
-                    </div>
                     
-<p id="no-results" hidden>
-    No results found.
-</p>
+                    <article class="cake-card" data-category="classic">
 
+                        <img
+                            src="images/red velvet.png"
+                            alt="Red velvet cake with cream cheese frosting"
+                        >
+
+                        <div class="cake-card-content">
+
+                            <h3>Red velvet</h3>
+
+                            <p>
+                                Classic red velvet sponge with
+                                smooth cream cheese frosting.
+                            </p>
+
+                            <div class="cake-card-footer">
+                                <span class="price">7900tg</span>
+
+                                <a href="order.html" class="order-button">
+                                    Order
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+                   
+                    <article class="cake-card" data-category="fruit">
+
+                        <img
+                            src="images/fruity cake.png"
+                            alt="Fruit cake decorated with fresh fruits"
+                        >
+
+                        <div class="cake-card-content">
+
+                            <h3>Fresh fruit cake</h3>
+
+                            <p>
+                                Fresh seasonal fruits combined with
+                                light cream and soft sponge.
+                            </p>
+
+                            <div class="cake-card-footer">
+                                <span class="price">8200tg</span>
+
+                                <a href="order.html" class="order-button">
+                                    Order
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    
+                    <article class="cake-card" data-category="classic">
+
+                        <img
+                            src="images/caramel cake.png"
+                            alt="Caramel cake with caramel topping"
+                        >
+
+                        <div class="cake-card-content">
+
+                            <h3>Caramel heaven</h3>
+
+                            <p>
+                                Soft caramel cake with creamy filling
+                                and homemade caramel sauce.
+                            </p>
+
+                            <div class="cake-card-footer">
+                                <span class="price">8000tg</span>
+
+                                <a href="order.html" class="order-button">
+                                    Order
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
 
                 </div>
-            </article>
-            </div>
 
-        </div>
-
-</section>
-<section class="custom-cake">
-
-    <div class="container">
-
-        <div class="custom-cake-content">
-
-            <div>
-                <h2 style="text-align:center ;">MAKE IT YOURS</h2>
-
-                <h3>Create your custom cake</h3>
-
-                <p>
-                    Have a special idea? Tell us about your
-                    preferred flavor, size and design.
-                    Our team will help create a cake
-                    especially for your celebration.
+                <p id="no-results" role="status" hidden>
+                    No results found.
                 </p>
 
-                <a href="contact.html" class="button" >
-                    Request a custom cake
-                </a>
             </div>
+        </section>
+
+        <section class="custom-cake">
+            <div class="container">
+
+                <div class="custom-cake-content">
+                    <div>
+
+                        <h2>MAKE IT YOURS</h2>
+                        <h3>Create your custom cake</h3>
+
+                        <p>
+                            Have a special idea? Tell us about your
+                            preferred flavor, size and design.
+                            Our team will help create a cake
+                            especially for your celebration.
+                        </p>
+
+                        <a href="contact.html" class="button">
+                            Request a custom cake
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <p>Rose Cakes</p>
+
+            <p>
+                © 2026 Rose Cakes. All rights reserved.
+            </p>
 
         </div>
+    </footer>
 
-    </div>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/catalog-search.js"></script>
 
-</section>
-
-</main>
-<main>
-    ...
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <p>Rose Cakes</p>
-        <p>© 2026 Rose Cakes. All rights reserved.</p>
-    </div>
-</footer>
-
-</body>
-</html>
-<script src="js/catalog-search.js"></script>
-    
 </body>
 </html>

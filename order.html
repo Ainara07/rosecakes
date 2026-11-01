@@ -1,158 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Order | Rose Cakes</title>
+
     <link rel="icon" type="image/png" href="images/icon_rc.png">
     <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
 
-<header class="header">
-    <div class="container header-container">
-
-        <a href="index.html" class="logo">Rose Cakes</a>
-
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="about.html">About Us</a>
-            <a href="order.html" class="active">Order</a>
-            <a href="contact.html">Contact</a>
-            <a href="registration.html">Register</a>
-
-
-        </nav>
-
-    </div>
-</header>
-
-<main>
-
-    <section class="order-intro">
+    <div class="theme-bar">
         <div class="container">
-            <h1>Create Your Perfect Cake</h1>
-            <p>
-                Tell us about your perfect cake and we will prepare
-                something special for your celebration.
-            </p>
+            <button
+                type="button"
+                id="theme-toggle"
+                aria-pressed="false">
+                Switch to Dark Theme
+            </button>
         </div>
-    </section>
+    </div>
 
-    <section class="order-section">
+    <header class="header">
+        <div class="container header-container">
+
+            <a class="logo" href="index.html">Rose Cakes</a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="about.html">About Us</a>
+                <a href="order.html" class="active" aria-current="page">Order</a>
+                <a href="contact.html">Contact</a>
+                <a href="registration.html">Register</a>
+                <a href="account.html">My Account</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="order-intro">
+            <div class="container">
+
+                <h1>Create Your Perfect Cake</h1>
+
+                <p>
+                    Tell us about your perfect cake and we will prepare
+                    something special for your celebration.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="container">
+
+                <h2>Place Your Order</h2>
+
+                <p id="demo-note">
+                    Demo only. Your information is not sent or stored.
+                    Use sample details.
+                </p>
+
+                <form
+                    action="demo-result.html"
+                    method="get"
+                    class="order-form"
+                    aria-describedby="demo-note">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input
+                                type="text"
+                                id="full-name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cake">Choose a Cake</label>
+
+                            <select id="cake" required>
+                                <option value="">Select a cake</option>
+                                <option>Chocolate Dream</option>
+                                <option>Strawberry Delight</option>
+                                <option>Red Velvet</option>
+                                <option>Custom Cake</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Order Date</label>
+                            <input
+                                type="date"
+                                id="date"
+                                required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="details">Additional Details</label>
+                            <textarea
+                                id="details"
+                                rows="5"></textarea>
+                        </div>
+
+                    </div>
+
+                    <button class="order-button" type="submit">
+                        Check Demo Order
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+
+                <h2>Frequently Asked Questions</h2>
+
+                <details class="faq-item">
+                    <summary>How early should I place my order?</summary>
+                    <p>
+                        We recommend placing your order several days
+                        before the required date.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I request a custom cake design?</summary>
+                    <p>
+                        Yes. You can describe your preferred design
+                        and additional details in the order form.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do you offer delivery?</summary>
+                    <p>
+                        Delivery options depend on the order details
+                        and location.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I add a custom message to the cake?</summary>
+                    <p>
+                        Yes. You can include a custom message
+                        in the additional details field.
+                    </p>
+                </details>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
         <div class="container">
-
-            <h2>Place Your Order</h2>
-            <p id="demo-note">
-    Demo only. Your information is not sent or stored. Use sample details.
-</p>
-
-
-          <form class="order-form"
-      action="demo-result.html"
-      method="get"
-      aria-describedby="demo-note">
-
-    <div class="form-grid">
-
-        <div class="form-group">
-            <label for="full-name">Full Name</label>
-            <input
-                id="full-name"
-                type="text"
-                required>
+            <p>Rose Cakes</p>
+            <p>© 2026 Rose Cakes. All rights reserved.</p>
         </div>
+    </footer>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input
-                id="email"
-                type="email"
-                required>
-        </div>
-
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input
-                id="phone"
-                type="tel"
-                required>
-        </div>
-
-        <div class="form-group">
-            <label for="cake">Choose a Cake</label>
-            <select id="cake" required>
-                <option value="">Select a cake</option>
-                <option>Chocolate Dream</option>
-                <option>Strawberry Delight</option>
-                <option>Red Velvet</option>
-                <option>Custom Cake</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="date">Order Date</label>
-            <input
-                id="date"
-                type="date"
-                required>
-        </div>
-
-        <div class="form-group full-width">
-            <label for="details">Additional Details</label>
-            <textarea
-                id="details"
-                rows="5"></textarea>
-        </div>
-
-    </div>
-
-    <button type="submit" class="order-button">
-        Check Demo Order
-    </button>
-
-</form>
-
-        </div>
-    </section>
-
-   <section class="faq-section" id="faq">
-    <div class="container">
-        <h2>Frequently Asked Questions</h2>
-
-        <details class="faq-item">
-            <summary>How early should I place my order?</summary>
-            <p>We recommend placing your order several days before the required date.</p>
-        </details>
-
-        <details class="faq-item">
-            <summary>Can I request a custom cake design?</summary>
-            <p>Yes. You can describe your preferred design and additional details in the order form.</p>
-        </details>
-
-        <details class="faq-item">
-            <summary>Do you offer delivery?</summary>
-            <p>Delivery options depend on the order details and location.</p>
-        </details>
-
-        <details class="faq-item">
-            <summary>Can I add a custom message to the cake?</summary>
-            <p>Yes. You can include a custom message in the additional details field.</p>
-        </details>
-    </div>
-</section>
-
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <p>Rose Cakes</p>
-        <p>&copy; 2026 Rose Cakes. All rights reserved.</p>
-    </div>
-</footer>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/theme.js"></script>
 
 </body>
 </html>

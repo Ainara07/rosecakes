@@ -1,41 +1,110 @@
 
 
-const searchInput = document.getElementById("cake-search");
+$(document).ready(function () {
 
-const cakeCards = document.querySelectorAll(".cake-grid .cake-card");
+    const searchInput = $("#cake-search");
+    const cakeCards = $(".cake-grid .cake-card");
+    const searchCount = $("#search-count");
+    const noResults = $("#no-results");
+    const filterButtons = $(".filter-btn");
 
-const searchCount = document.getElementById("search-count");
+    let selectedCategory = "all";
 
-const noResults = document.getElementById("no-results");
+    function filterCakes() {
 
-function filterCakes() {
+        const searchText =
+            searchInput.val().trim().toLowerCase();
 
-    const searchText = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
 
-    let visibleCount = 0;
+        cakeCards.each(function () {
 
-    cakeCards.forEach(function (card) {
+            const card = $(this);
 
-        const cakeTitle = card.querySelector("h3")
-            .textContent.trim().toLowerCase();
+            const cakeName = card.find("h3")
+                .text()
+                .trim()
+                .toLowerCase();
 
-        const matches = cakeTitle.includes(searchText);
+            const category =
+                card.attr("data-category");
 
-        card.hidden = !matches;
+            const matchesSearch =
+                cakeName.includes(searchText);
 
-        if (matches) {
-            visibleCount++;
-        }
+            const matchesCategory =
+                selectedCategory === "all" ||
+                category === selectedCategory;
 
+            const isVisible =
+                matchesSearch && matchesCategory;
+
+            card.prop("hidden", !isVisible);
+
+            if (isVisible) {
+                visibleCount++;
+            }
+
+        });
+
+        searchCount.text(
+            "Showing " + visibleCount +
+            " of " + cakeCards.length + " cakes"
+        );
+
+        noResults.prop(
+            "hidden",
+            visibleCount !== 0
+        );
+    }
+
+
+
+
+    searchInput.on("input", function () {
+        filterCakes();
     });
 
-    searchCount.textContent =
-        "Showing " + visibleCount +
-        " of " + cakeCards.length + " cakes";
 
-    noResults.hidden = visibleCount !== 0;
-}
 
-searchInput.addEventListener("input", filterCakes);
+    filterButtons.on("click", function () {
 
-filterCakes();
+        selectedCategory =
+            $(this).attr("data-filter");
+
+        filterButtons
+            .removeClass("active")
+            .attr("aria-pressed", "false");
+
+        $(this)
+            .addClass("active")
+            .attr("aria-pressed", "true");
+
+        filterCakes();
+    });
+
+
+
+    $("#clear-filters").on("click", function () {
+
+        searchInput.val("");
+
+        selectedCategory = "all";
+
+        filterButtons
+            .removeClass("active")
+            .attr("aria-pressed", "false");
+
+        $('.filter-btn[data-filter="all"]')
+            .addClass("active")
+            .attr("aria-pressed", "true");
+
+        filterCakes();
+    });
+
+
+    
+
+    filterCakes();
+
+});

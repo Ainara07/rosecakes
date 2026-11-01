@@ -1,112 +1,71 @@
-const nameInput = document.getElementById("welcome-name");
-const welcomeButton = document.querySelector("#welcome-button");
-const welcomeMessage = document.getElementById("welcome-message");
+$(document).ready(function () {
 
-welcomeButton.addEventListener("click", function () {
-    const name = nameInput.value.trim();
+    const nameInput = $("#welcome-name");
+    const welcomeButton = $("#welcome-button");
+    const welcomeMessage = $("#welcome-message");
 
-    if (name === "") {
-        welcomeMessage.textContent = "Please enter your name.";
-    } else {
-        welcomeMessage.textContent =
-            "Welcome to Rose Cakes, " + name + "!";
-    }
-});
+    nameInput.on("input", function () {
+        const name = nameInput.val().trim();
 
+        if (name === "") {
+            welcomeMessage.text("");
+        } else {
+            welcomeMessage.text("Ready to greet " + name + ".");
+        }
+    });
 
-const themeButton = document.getElementById("theme-toggle");
+    welcomeButton.on("click", function () {
+        const name = nameInput.val().trim();
 
-themeButton.addEventListener("click", function () {
-    const isDark = document.body.classList.toggle("dark-theme");
-
-    if (isDark) {
-        themeButton.textContent = "Switch to Light Theme";
-    } else {
-        themeButton.textContent = "Switch to Dark Theme";
-    }
-
-    themeButton.setAttribute("aria-pressed", String(isDark));
-});
+        if (name === "") {
+            welcomeMessage.text("Please enter your name.");
+        } else {
+            welcomeMessage.text(
+                "Welcome to Rose Cakes, " + name + "!"
+            );
+        }
+    });
 
 
+    $(".faq-question").on("click", function () {
 
-const faqButtons = document.querySelectorAll(".faq-question");
-
-faqButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        const answerId = button.getAttribute("aria-controls");
-        const answer = document.getElementById(answerId);
+        const button = $(this);
+        const answerId = button.attr("aria-controls");
+        const answer = $("#" + answerId);
 
         const isExpanded =
-            button.getAttribute("aria-expanded") === "true";
+            button.attr("aria-expanded") === "true";
 
-        answer.hidden = isExpanded;
+        answer.stop(true, true);
 
-        button.setAttribute(
-            "aria-expanded",
-            String(!isExpanded)
-        );
+        if (isExpanded) {
+            answer.slideUp(250);
+        } else {
+            answer.slideDown(250);
+        }
 
+        button.attr("aria-expanded", String(!isExpanded));
+    });
+
+    $("#faq-tip-toggle").on("click", function () {
+
+        const button = $(this);
+        const tip = $("#faq-tip-text");
+
+        const isExpanded =
+            button.attr("aria-expanded") === "true";
+
+        tip.stop(true, true);
+
+        if (isExpanded) {
+            tip.fadeOut(300);
+            button.text("Show Ordering Tip");
+        } else {
+            tip.fadeIn(300);
+            button.text("Hide Ordering Tip");
+        }
+
+        button.attr("aria-expanded", String(!isExpanded));
     });
 
 });
-
-
-const favouriteForm = document.getElementById("favourite-form");
-const favouriteInput = document.getElementById("favourite-input");
-const favouriteList = document.getElementById("favourite-list");
-const favouriteCount = document.getElementById("favourite-count");
-const favouriteFeedback = document.getElementById("favourite-feedback");
-
-function updateFavouriteCount() {
-    const total = favouriteList.querySelectorAll("li").length;
-    favouriteCount.textContent = "Total favourites: " + total;
-}
-
-favouriteForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    const cakeName = favouriteInput.value.trim();
-
-    if (cakeName === "") {
-        favouriteFeedback.textContent =
-            "Please enter a cake name.";
-        favouriteInput.focus();
-        return;
-    }
-
-    favouriteFeedback.textContent = "";
-
-    const newItem = document.createElement("li");
-
-    const cakeText = document.createElement("span");
-    cakeText.textContent = cakeName;
-
-    const removeButton = document.createElement("button");
-    removeButton.type = "button";
-    removeButton.textContent = "Remove";
-
-    removeButton.setAttribute(
-        "aria-label",
-        "Remove " + cakeName
-    );
-
-    removeButton.addEventListener("click", function () {
-        newItem.remove();
-        updateFavouriteCount();
-    });
-
-    newItem.append(cakeText, removeButton);
-    favouriteList.append(newItem);
-
-    updateFavouriteCount();
-
-    favouriteInput.value = "";
-    favouriteInput.focus();
-
-});
-
-updateFavouriteCount();

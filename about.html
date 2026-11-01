@@ -1,128 +1,265 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Rose Cakes</title>
-  <link rel="stylesheet" href="css/about.css">
-<link rel="stylesheet" href="css/responsive.css">
-  <link rel="icon" type="image/jpg" href="images/icon_rc.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Rose Cakes</title>
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/jpg" href="images/icon_rc.png">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
+
 <body>
-  <header class="main-header">
-    <div class="container">
 
-        <a href="index.html" class="logo">Rose Cakes</a>
-
-        <nav class="main-nav">
-            <a href="index.html" >Home</a>
-            <a href="catalog.html">Catalog</a>
-            <a href="about.html" class="active">About Us</a>
-            <a href="order.html">Order</a>
-            <a href="contact.html">Contact</a>
-            <a href="registration.html">Register</a>
-
-
-        </nav>
-
+    <div class="theme-bar">
+        <div class="container">
+            <button
+                type="button"
+                id="theme-toggle"
+                aria-pressed="false">
+                Switch to Dark Theme
+            </button>
+        </div>
     </div>
-</header>
 
-  <main>
-    <section class="page-title-section">
-      <div class="container">
-      <h1>About Rose Cakes</h1>
-      <p>Crafting sweet memories with passion, organic ingredients, and aesthetic designs.</p>
-      </div>
-    </section>
+    <header class="main-header">
+        <div class="container">
 
-    <section class="about-story-section">
-      <div class="container">
-        <h2>Our Story & Passion</h2>
-        <p>Founded in 2021, Rose Cakes started as a small home bakery with a passion for elegant confectionery. Today, we specialize in custom wedding cakes, delicate macarons, and boutique pastries made daily with local ingredients.</p>
-      </div>
-      <div class="stats-flex">
-        <div class="stat-card">
-          <h3>5+</h3>
-          <p>Years of Culinary Excellence</p>
+            <a href="index.html" class="logo">
+                Rose Cakes
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+
+                <a
+                    href="about.html"
+                    class="active"
+                    aria-current="page">
+                    About Us
+                </a>
+
+                <a href="order.html">Order</a>
+                <a href="contact.html">Contact</a>
+                <a href="registration.html">Register</a>
+                <a href="account.html">My Account</a>
+            </nav>
+
         </div>
-        <div class="stat-card">
-          <h3>1,200+</h3>
-          <p>Custom Cakes Created</p>
-        </div>
-        <div class="stat-card">
-          <h3>100%</h3>
-          <p>Natural & Fresh Ingredients</p>
-        </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="process-section">
-      <h2>How We Make Magic</h2>
-      <div class="process-grid">
-        <article class="process-card">
-          <span class="step-num">01</span>
-          <h3>Consultation</h3>
-          <p>We discuss your design ideas, flavors, guest counts, and personal event needs.</p>
-        </article>
-        <article class="process-card">
-          <span class="step-num">02</span>
-          <h3>Tasting & Planning</h3>
-          <p>Sample our signature sponges, curds, and buttercreams to pick your combination.</p>
-        </article>
-        <article class="process-card">
-          <span class="step-num">03</span>
-          <h3>Baking & Styling</h3>
-          <p>Our pastry chefs meticulously assemble and hand-decorate your custom cake.</p>
-        </article>
-        <article class="process-card">
-          <span class="step-num">04</span>
-          <h3>Fresh Delivery</h3>
-          <p>Safely delivered directly to your venue in refrigerated custom packaging.</p>
-        </article>
-      </div>
-    </section>
+    <main>
 
-    <section class="team-section">
-      <h2>Meet Our Confectioners</h2>
-      <div class="team-grid">
-        <article class="team-card">
-          <img src="images/baker1.jpg" alt="Head Pastry Chef">
-          <h3>Mark Tini</h3>
-          <p class="role">Head Pastry Chef</p>
-        </article>
-        <article class="team-card">
-          <img src="images/baker2.jpg" alt="Cake Decorator">
-          <h3>Piter Parker</h3>
-          <p class="role">Lead Decorator</p>
-        </article>
-        <article class="team-card">
-          <img src="images/baker3.jpg" alt="Flavor Specialist">
-          <h3>Shiko Mary</h3>
-          <p class="role">Flavor Specialist</p>
-        </article>
-        <article class="team-card">
-          <img src="images/baker4.jpg" alt="Macaron Expert">
-          <h3>Maco Ronnie</h3>
-          <p class="role">Macaron Expert</p>
-        </article>
-        <article class="team-card">
-          <img src="images/baker5.jpg" alt="Dessert Stylist">
-          <h3>Book Bratan</h3>
-          <p class="role">Boutique Stylist</p>
-        </article>
-        <article class="team-card">
-          <img src="images/baker6.jpg" alt="Logistics Manager">
-          <h3>Doctor Doom</h3>
-          <p class="role">Delivery Coordinator</p>
-        </article>
-      </div>
-    </section>
-  </main>
+        <section class="page-title-section">
+            <div class="container">
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Rose Cakes. All rights reserved.</p>
-  </footer>
+                <h1>About Rose Cakes</h1>
+
+                <p>
+                    Crafting sweet memories with passion,
+                    organic ingredients, and aesthetic designs.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="about-story-section">
+
+            <div class="container">
+
+                <h2>Our Story &amp; Passion</h2>
+
+                <p>
+                    Founded in 2021, Rose Cakes started as a small
+                    home bakery with a passion for elegant confectionery.
+                    Today, we specialize in custom wedding cakes,
+                    delicate macarons, and boutique pastries made
+                    daily with local ingredients.
+                </p>
+
+            </div>
+
+            <div class="stats-flex">
+
+                <div class="stat-card">
+                    <h3>5+</h3>
+                    <p>Years of Culinary Excellence</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>1,200+</h3>
+                    <p>Custom Cakes Created</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Natural &amp; Fresh Ingredients</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="process-section">
+
+            <h2>How We Make Magic</h2>
+
+            <div class="process-grid">
+
+                <article class="process-card">
+
+                    <span class="step-num">01</span>
+
+                    <h3>Consultation</h3>
+
+                    <p>
+                        We discuss your design ideas, flavors,
+                        guest counts, and personal event needs.
+                    </p>
+
+                </article>
+
+                <article class="process-card">
+
+                    <span class="step-num">02</span>
+
+                    <h3>Tasting &amp; Planning</h3>
+
+                    <p>
+                        Sample our signature sponges, curds,
+                        and buttercreams to pick your combination.
+                    </p>
+
+                </article>
+
+                <article class="process-card">
+
+                    <span class="step-num">03</span>
+
+                    <h3>Baking &amp; Styling</h3>
+
+                    <p>
+                        Our pastry chefs meticulously assemble
+                        and hand-decorate your custom cake.
+                    </p>
+
+                </article>
+
+                <article class="process-card">
+
+                    <span class="step-num">04</span>
+
+                    <h3>Fresh Delivery</h3>
+
+                    <p>
+                        Safely delivered directly to your venue
+                        in refrigerated custom packaging.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="team-section">
+
+            <h2>Meet Our Confectioners</h2>
+
+            <div class="team-grid">
+
+                <article class="team-card">
+
+                    <img
+                        src="images/baker1.jpg"
+                        alt="Head Pastry Chef"
+                    >
+
+                    <h3>Mark Tini</h3>
+                    <p class="role">Head Pastry Chef</p>
+
+                </article>
+
+                <article class="team-card">
+
+                    <img
+                        src="images/baker2.jpg"
+                        alt="Cake Decorator"
+                    >
+
+                    <h3>Piter Parker</h3>
+                    <p class="role">Lead Decorator</p>
+
+                </article>
+
+                <article class="team-card">
+
+                    <img
+                        src="images/baker3.jpg"
+                        alt="Flavor Specialist"
+                    >
+
+                    <h3>Shiko Mary</h3>
+                    <p class="role">Flavor Specialist</p>
+
+                </article>
+
+                <article class="team-card">
+
+                    <img
+                        src="images/baker4.jpg"
+                        alt="Macaron Expert"
+                    >
+
+                    <h3>Maco Ronnie</h3>
+                    <p class="role">Macaron Expert</p>
+
+                </article>
+
+                <article class="team-card">
+
+                    <img
+                        src="images/baker5.jpg"
+                        alt="Dessert Stylist"
+                    >
+
+                    <h3>Book Bratan</h3>
+                    <p class="role">Boutique Stylist</p>
+
+                </article>
+
+                <article class="team-card">
+
+                    <img
+                        src="images/baker6.jpg"
+                        alt="Logistics Manager"
+                    >
+
+                    <h3>Doctor Doom</h3>
+                    <p class="role">Delivery Coordinator</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            © 2026 Rose Cakes. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/theme.js"></script>
 
 </body>
 </html>

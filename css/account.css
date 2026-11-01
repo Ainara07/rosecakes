@@ -1,0 +1,146 @@
+
+.account-page {
+    min-height: 65vh;
+    padding: 48px 0 65px;
+    background: #ffefec;
+    text-align: center;
+}
+
+.account-intro {
+    max-width: 760px;
+    margin: 0 auto 26px;
+}
+
+.account-intro h1 {
+    margin: 12px 0;
+    font-size: clamp(32px, 5vw, 46px);
+}
+
+.account-note {
+    max-width: 650px;
+    margin: 12px auto;
+    font-size: 16px;
+    color: #75646b;
+}
+
+.account-card {
+    max-width: 690px;
+    margin: 25px auto;
+    padding: 36px;
+    background: #fff7f8;
+    border: 1px solid #f3d7df;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(94, 46, 67, 0.08);
+}
+
+.account-card h2 {
+    margin: 0 0 12px;
+    font-size: 30px;
+}
+
+.account-card form label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.favourite-controls {
+    display: flex;
+    gap: 10px;
+}
+
+#favourite-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d8a7b5;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.favourite-controls button,
+.remove-favourite {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 20px;
+    background: #c66f82;
+    color: #fff;
+    cursor: pointer;
+}
+
+#favourite-list {
+    list-style: none;
+    padding: 0;
+    margin: 22px auto;
+    max-width: 570px;
+}
+
+.favourite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #f2d7de;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 12px 14px;
+    overflow-wrap: anywhere;
+}
+
+.favourite-item .cake-name {
+    font-weight: 600;
+}
+
+#favourite-count {
+    font-weight: 700;
+}
+
+#favourite-feedback {
+    min-height: 24px;
+    margin: 10px 0 0;
+    color: #a43c54;
+}
+
+#favourite-empty {
+    margin: 12px 0;
+    color: #75646b;
+    font-size: 16px;
+}
+
+#favourite-empty a {
+    color: #9e4560;
+}
+
+.account-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.account-actions a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media (max-width: 540px) {
+    .account-card {
+        padding: 24px 17px;
+    }
+
+    .favourite-controls {
+        flex-wrap: wrap;
+    }
+
+    .favourite-controls button {
+        width: 100%;
+    }
+
+    .favourite-item {
+        flex-wrap: wrap;
+    }
+}

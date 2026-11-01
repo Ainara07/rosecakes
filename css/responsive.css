@@ -483,3 +483,107 @@ img {
         grid-column: 1 / -1;
     }
 }
+
+
+.catalog-products .order-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.cake-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.main-nav a {
+    white-space: nowrap;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #963f5d;
+    outline-offset: 3px;
+}
+
+body.dark-theme a:focus-visible,
+body.dark-theme button:focus-visible,
+body.dark-theme input:focus-visible,
+body.dark-theme textarea:focus-visible,
+body.dark-theme select:focus-visible {
+    outline-color: #ffd1de;
+}
+
+@media (max-width: 767px) {
+
+    .site-header .container,
+    .main-header .container,
+    .header .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+    }
+
+    .welcome-bar-controls {
+        flex-wrap: wrap;
+    }
+
+    .welcome-bar-controls input {
+        flex: 1 1 180px;
+        min-width: 0;
+    }
+
+    .account-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .theme-bar .container {
+        padding: 10px 16px;
+    }
+
+    #theme-toggle {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .main-nav {
+        gap: 6px 10px;
+    }
+
+    .main-nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .cake-card-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cake-card-footer .order-button {
+        width: 100%;
+        text-align: center;
+    }
+}
